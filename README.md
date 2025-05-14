@@ -20,7 +20,7 @@ ProjetoFinalComSite/
 
 ## Integrantes
 - Giuliano Sapienza de Almeida
-- Gabriel Fernando
+- Gabriel Fernando Nascimento
 - Rodrigo Carvalho da Silva Junior
 
 Curso: Análise e Desenvolvimento de Sistemas (TADS)  
