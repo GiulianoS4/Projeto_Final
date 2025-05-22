@@ -1,44 +1,30 @@
-# Projeto_Final
+# GameCatalogApp
 
-ProjetoFinalComSite/
-│
-├── backend/                   # Projeto Java com cadastro de usuários
-│   ├── src/
-│   ├── sql/
-│   ├── .gitignore
-│   ├── README.md
-│
-├── site/                      # Site da loja de jogos
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── ...
-│
-└── README.md                  # Explicação geral do projeto
+Aplicação desenvolvida em **Java** utilizando **Swing** para interface gráfica e **MySQL** como banco de dados. O sistema exibe uma tabela com informações sobre jogos cadastrados.
 
-# Projeto de Cadastro de Usuários
+---
 
-## Integrantes
-- Giuliano Sapienza de Almeida
-- Gabriel Fernando Nascimento
-- Rodrigo Carvalho da Silva Junior
+## 🏗️ Banco de Dados (MySQL)
 
-Curso: Análise e Desenvolvimento de Sistemas (TADS)  
-Semestre: 5º
+### ✔️ Como configurar no MySQL Workbench:
 
-## Tecnologias Usadas
-- Java JDK 17
-- NetBeans
-- MySQL
-- JDBC
-- Git/GitHub
+1. Abra o **MySQL Workbench**.
+2. Clique na sua conexão (Local instance ou outra).
+3. Abra uma nova aba de script (**File ➝ New SQL Tab**).
+4. Cole e execute o script `database.sql` que acompanha este projeto.
 
-## Funcionalidades
-- Interface gráfica com Java Swing
-- Cadastro de Nome, Documento e E-mail
-- Conexão com banco de dados MySQL
-- Exibição dos dados em tempo real
+✔️ Isso criará:
+- O banco de dados chamado `catalogo_games`.
+- A tabela `jogos` com os campos:
+  - `id` (inteiro, chave primária, auto incremento)
+  - `titulo` (texto, obrigatório)
+  - `genero` (texto, obrigatório)
+  - `desenvolvedora` (texto, obrigatório)
+  - `data_lancamento` (data)
+  - `data_cadastro` (timestamp automático)
 
+### 🔍 Consultar dados:
 
-## Licença
-Projeto Site de jogos.
+Execute:
+```sql
+SELECT * FROM jogos;
